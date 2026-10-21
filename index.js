@@ -73,7 +73,7 @@ class SlackAIAgent {
         if (process.env.NODE_ENV === 'development') {
             this.app.post('/test/analyze-member', async (req, res) => {
                 try {
-                    const { memberInfo } = req.body;
+                    const { memberInfo } = req.body ?? {};
                     if (!memberInfo) return res.status(400).json({ error: 'memberInfo is required' })
                     const analysis = await this.analyzeAndPostMember(memberInfo);
                     res.json({ success: true, analysis, timestamp: new Date().toISOString() });
