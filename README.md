@@ -90,8 +90,8 @@ This project uses Render.com PostgreSQL as the database.
 1. Go to [Render.com](https://render.com)
 2. Click "New" → "PostgreSQL"
 3. Configure the database:
-   - **Name:** `slack-agent-db`
-   - **Database:** `slack_agent`
+   - **Name:** `ej-agent-db`
+   - **Database:** `ej_agent`
    - **User:** choose a username
    - **Region:** same region as your web service
    - **Plan:** Free or Starter
